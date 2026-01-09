@@ -6,6 +6,7 @@
   --accent-dark: #008190;
   --text: #1e1b2c;
   --muted: #5d5a68;
+  --frame-border: #16b5ff;
 }
 
 *,
@@ -18,8 +19,18 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: "Public Sans", "Helvetica Neue", Arial, sans-serif;
-  background: var(--brand-light);
+  background: url("/images/site/checkerboard.jpg") repeat;
   color: var(--text);
+}
+
+.page-frame {
+  max-width: 78rem;
+  margin: 1.5rem auto;
+  background: #fff;
+  border: 8px solid var(--frame-border);
+  border-radius: 1.5rem;
+  padding: 0 1.75rem 2.5rem;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -34,7 +45,7 @@ a:focus {
 }
 
 header {
-  padding: 1.5rem 1rem 0.75rem;
+  padding: 1.5rem 0 0.75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,7 +68,7 @@ header {
 
 nav {
   background: var(--brand-dark);
-  margin: 0 auto 1.5rem;
+  margin: 0 0 1.5rem;
   max-width: 70rem;
   border-radius: 0.5rem;
 }
@@ -86,7 +97,7 @@ nav {
 }
 
 main {
-  padding: 0 1rem 3rem;
+  padding: 0 0 3rem;
 }
 
 .hero {
@@ -95,8 +106,8 @@ main {
   padding: 1.5rem;
   display: grid;
   gap: 1.5rem;
-  max-width: 70rem;
-  margin: 0 auto 2rem;
+  width: 100%;
+  margin: 0 0 2rem;
   box-shadow: 0 20px 60px rgba(17, 20, 48, 0.08);
 }
 
@@ -149,8 +160,7 @@ main {
 .content-grid {
   display: grid;
   gap: 1.5rem;
-  max-width: 70rem;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .panel {
@@ -199,9 +209,8 @@ main {
 }
 
 footer {
-  max-width: 70rem;
-  margin: 2rem auto;
-  padding: 1rem;
+  margin: 2rem 0 0;
+  padding: 1rem 0 0;
   text-align: left;
   color: var(--muted);
 }
